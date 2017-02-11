@@ -13,7 +13,7 @@ namespace ComicBookGalleryModel
     {
         public Context()
         {
-            Database.SetInitializer(new DropCreateDatabaseAlways<Context>());           
+            Database.SetInitializer(new DatabaseInitialiser());            
         }
 
         public DbSet<ComicBook> ComicBooks { get; set; }

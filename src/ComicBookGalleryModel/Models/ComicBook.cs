@@ -26,10 +26,10 @@ namespace ComicBookGalleryModel.Models
 
         public decimal? AverageRating { get; set; }
 
-        public ICollection<ComicBookArtist> Artists { get; set; }
+        public virtual ICollection<ComicBookArtist> Artists { get; set; }
 
 
-        public Series Series { get; set; }
+        public virtual Series Series { get; set; }
 
 
         public string DisplayText => $"{Series?.Title} #{IssueNumber}";
