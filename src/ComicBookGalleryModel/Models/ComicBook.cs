@@ -18,5 +18,8 @@ namespace ComicBookGalleryModel.Models
 
         public DateTime PublishedOn { get; set; }
 
+        public decimal? AverageRating { get; set; }
+
+
     }
 }
